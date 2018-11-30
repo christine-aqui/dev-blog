@@ -1,11 +1,11 @@
 module.exports = {
   //  define entry point
-  entry: "./src/script-1.js",
+  entry: './src/script-1.js',
 
   // define output point
   output: {
-    path: __dirname + "/dist",
-    filename: "bundle.js"
+    path: __dirname + '/dist',
+    filename: 'bundle.js'
   },
 
   //
@@ -17,7 +17,7 @@ module.exports = {
         // dont use on the node_modules folder
         exclude: /(node_modules)/,
         // specify the loader
-        loader: "babel-loader"
+        loader: 'babel-loader'
         // query: {
         //   presets: ["es2015"]
         // }
@@ -29,8 +29,8 @@ module.exports = {
         // style-loader - creates style nodes from JS strings
         // css-loader - translates CSS into CommonJS
         // sass-loader - compiles Sass to CSS, using Node Sass by default
-        loader: "style-loader!css-loader!sass-loader"
+        loader: 'style-loader!css-loader!sass-loader'
       }
     ] //loaders
   } //module
-};
+}
